@@ -16,7 +16,7 @@ La solución se encuentra desplegada sobre una infraestructura en la nube utiliz
 ## Estructura del Repositorio
 
 ```text
-apexcore-saas/
+saas-agent/
 │
 ├── agente.py          # Cerebro del RAG: carga el PDF, arma los embeddings, gestiona FAISS y los prompts del modelo
 ├── app.py             # Interfaz visual de usuario: maneja la app web con Streamlit y conecta el motor
@@ -26,7 +26,7 @@ apexcore-saas/
 │   │   └── Manual_ApexCore.pdf # Base de conocimiento oficial del SaaS que consulta el agente
 ├── requirements.txt   # Dependencias completas del proyecto listas para instalarse de un solo golpe
 ├── .env               # Archivo de configuración privada donde guardamos nuestra API key
-└── .gitignore         # Archivos que ignoramos por seguridad y limpieza (.env, carpetas de caché)
+└── Despliegue_Agente_RAG_ApexCore.pdf # Documento de evidencia técnica que demuestra el correcto funcionamiento del sistema
 ```
 
 ---
