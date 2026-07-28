@@ -19,13 +19,16 @@ Frontend: Interfaz web interactiva desarrollada en Streamlit con un diseño de i
 Para las evidencias de uso de Oracle Cloud, el repositorio incluye el archivo Despliegue_Agente_RAG_ApexCore.pdf y capturas de pantalla que demuestran el correcto funcionamiento del proyecto, la configuración de red y las reglas de seguridad en la plataforma.
 
 Ejemplos de preguntas y respuestas del agente:
+
 Pregunta: Como se configura un nuevo usuario administrador en la plataforma.
 Respuesta: El agente extraerá la ruta exacta del panel de control basándose en el manual oficial.
+
 Pregunta: Cuales son los pasos para generar el reporte mensual.
 Respuesta: El sistema listará las instrucciones precisas para la exportación de datos.
 
 ## Estructura del Repositorio
 
+```text
 saas-agent/
 agente.py : Cerebro del RAG, carga el PDF, arma los embeddings y gestiona FAISS
 app.py : Interfaz visual de usuario, maneja la app web con Streamlit
@@ -34,6 +37,7 @@ directorio/Manual_ApexCore.pdf : Base de conocimiento oficial del SaaS
 requirements.txt : Dependencias completas del proyecto
 .env : Archivo de configuración para claves de acceso
 Despliegue_Agente_RAG_ApexCore.pdf : Documento de evidencia técnica
+```
 
 ## Guía de Instalación y Despliegue
 
