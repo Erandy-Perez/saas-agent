@@ -30,13 +30,16 @@ Respuesta: El sistema listará las instrucciones precisas para la exportación d
 
 ```text
 saas-agent/
-agente.py : Cerebro del RAG, carga el PDF, arma los embeddings y gestiona FAISS
-app.py : Interfaz visual de usuario, maneja la app web con Streamlit
-frontend/style.css : Capa de presentación, diseño visual y estilos
-directorio/Manual_ApexCore.pdf : Base de conocimiento oficial del SaaS
-requirements.txt : Dependencias completas del proyecto
-.env : Archivo de configuración para claves de acceso
-Despliegue_Agente_RAG_ApexCore.pdf : Documento de evidencia técnica
+│
+├── agente.py          # Cerebro del RAG: carga el PDF, arma los embeddings, gestiona FAISS y los prompts del modelo
+├── app.py             # Interfaz visual de usuario: maneja la app web con Streamlit y conecta el motor
+├── frontend/
+│   │   └── style.css  # Capa de presentación: diseño visual, efectos de cristal y estilos
+├── directorio/
+│   │   └── Manual_ApexCore.pdf # Base de conocimiento oficial del SaaS que consulta el agente
+├── requirements.txt   # Dependencias completas del proyecto listas para instalarse
+├── .env               # Archivo de configuración privada donde se guarda la API key
+└── Despliegue_Agente_RAG_ApexCore.pdf # Documento de evidencia técnica que demuestra el correcto funcionamiento del sistema
 ```
 
 ## Guía de Instalación y Despliegue
